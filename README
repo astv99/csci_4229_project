@@ -14,6 +14,13 @@ The provided Makefile will compile the source on either Linux (via GCC) or Windo
 
 Texture files were acquired from various library Web sites.
 
+Files that I authored include:
+- fp_ee.c
+- fp_ee.h
+- Makefile
+
+All other C and H files were provided to the class, presumably written by the professor, Dr. Willem A. Schreüder.
+
 ------------------------------------------
 Unpacking & Compilation on Linux & Windows
 ------------------------------------------
