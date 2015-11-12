@@ -1,36 +1,37 @@
-# CSCI 4229 Final Project #
+CSCI 4229 Final Project
 
-- *Author*: Stephen Ham
-- *Date Submitted*: 2014/06/28
-- *Description*: First-Person Egyptian Environment
+- Author: 			Stephen Ham
+- Date Submitted: 	2014/06/28
+- Description: 		First-Person Egyptian Environment
 
-----------
-**Technical Overview**
+------------------
+Technical Overview
+------------------
 
 3D environment created with OpenGL 2.0 using GLUT. Written in C and developed & tested on both Ubuntu Linux 14.04 LTS and Windows 7 (with MinGW).
 
-The provided *makefile* will compile the source on either Linux (via GCC) or Windows (via MinGW). For Windows, compilation and execution requires glut32.dll (provided) to be placed in the \windows\system32 folder.
+The provided Makefile will compile the source on either Linux (via GCC) or Windows (via MinGW). For Windows, compilation and execution requires glut32.dll (provided) to be placed in the \windows\system32 folder.
 
 Texture files were acquired from various library Web sites.
 
-----------
-**Unpacking & Compilation on Linux & Windows**
+------------------------------------------
+Unpacking & Compilation on Linux & Windows
+------------------------------------------
 
-Extract all files to a desired folder path (all are needed).
-To compile & link, enter: 
-> $ make
+1. Extract all files to a desired folder path (all are needed).
+2. To compile & link, enter: 
+	$ make
+3. To run the program once built, enter:
+	$ ./fp_ee
+4. To delete the object file(s), enter:
+	$ make clean
 
-To run the program once built, enter:
-> $ ./fp_ee
-
-To delete the object file(s), enter:
-> $ make clean
-
-----------
-**User Interaction Instructions**
+-----------------------------
+User Interaction Instructions
+-----------------------------
 
 - Esc		: quit
-- x/X 		: show/hide the coordinate axes (hidden by default)
+- x/X 	: show/hide the coordinate axes (hidden by default)
 - p/P		: enable/disable lighting effects
 
 - +/-		: increase/decrease field of view (sky-view & 1st-person views)
@@ -44,15 +45,17 @@ To delete the object file(s), enter:
 - q/Q		: turn (camera) left  		(only in 1st-person view)
 - e/E		: turn (camera) right  		(only in 1st-person view)
 
-- [Arrow Keys] : adjust view in appropriate direction (only in sky-view)
+<Arrow Keys> : adjust view in appropriate direction (only in sky-view)
 
 ----------
-**Time taken**
+Time Taken
+----------
 
 35-40 hours estimated.
 
 ----------
-**References**
+References
+----------
 
 C source code split into two files:
 
@@ -64,8 +67,9 @@ in-class Example Programs.
 
 Texture files must be in the same folder as the object file in order for it to run.
 
-----------
-**Work Completed - Highlights**
+---------------------------
+Work Completed - Highlights
+---------------------------
 
 + Full-featured first-person-style navigation, with separate keys for
 strafing and turning.
