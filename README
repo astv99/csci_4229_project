@@ -1,8 +1,8 @@
 CSCI 4229 Final Project
 
-- Author: 			Stephen Ham
-- Date Submitted: 	2014/06/28
-- Description: 		First-Person Egyptian Environment
+- Author:				Stephen Ham
+- Date Submitted: 		2014/06/28
+- Description: 			First-Person Egyptian Environment
 
 ------------------
 Technical Overview
@@ -31,7 +31,7 @@ User Interaction Instructions
 -----------------------------
 
 - Esc		: quit
-- x/X 	: show/hide the coordinate axes (hidden by default)
+- x/X		: show/hide the coordinate axes (hidden by default)
 - p/P		: enable/disable lighting effects
 
 - +/-		: increase/decrease field of view (sky-view & 1st-person views)
