@@ -1,0 +1,81 @@
+# CSCI 4229 Final Project #
+
+- *Author*: Stephen Ham
+- *Date Submitted*: 2014/06/28
+- *Description*: First-Person Egyptian Environment
+
+----------
+**Technical Overview**
+
+3D environment created with OpenGL 2.0 using GLUT. Written in C and developed & tested on both Ubuntu Linux 14.04 LTS and Windows 7 (with MinGW).
+
+The provided *makefile* will compile the source on either Linux (via GCC) or Windows (via MinGW). For Windows, compilation and execution requires glut32.dll (provided) to be placed in the \windows\system32 folder.
+
+Texture files were acquired from various library Web sites.
+
+----------
+**Unpacking & Compilation on Linux & Windows**
+
+Extract all files to a desired folder path (all are needed).
+To compile & link, enter: 
+> $ make
+
+To run the program once built, enter:
+> $ ./fp_ee
+
+To delete the object file(s), enter:
+> $ make clean
+
+----------
+**User Interaction Instructions**
+
+- Esc		: quit
+- x/X 		: show/hide the coordinate axes (hidden by default)
+- p/P		: enable/disable lighting effects
+
+- +/-		: increase/decrease field of view (sky-view & 1st-person views)
+- v/V		: reset field of view to default value of 75 (both views)
+- f/F		: toggle sky-view vs 1st-person view
+
+- w/W		: move (camera) forward		(only in 1st-person view)
+- s/S		: move (camera) backward  	(only in 1st-person view)
+- a/A		: strafe (camera) left  	(only in 1st-person view)
+- d/D		: strafe (camera) right  	(only in 1st-person view)
+- q/Q		: turn (camera) left  		(only in 1st-person view)
+- e/E		: turn (camera) right  		(only in 1st-person view)
+
+- [Arrow Keys] : adjust view in appropriate direction (only in sky-view)
+
+----------
+**Time taken**
+
+35-40 hours estimated.
+
+----------
+**References**
+
+C source code split into two files:
+
+1. fp_ee.c (main & driver code)
+1. fp_ee.h (header containing the scene render methods)
+
+Portions of the code for this assignment were taken from various
+in-class Example Programs.
+
+Texture files must be in the same folder as the object file in order for it to run.
+
+----------
+**Work Completed - Highlights**
+
++ Full-featured first-person-style navigation, with separate keys for
+strafing and turning.
+
++ Lighting effects set to create a visual early-night mood, using four
+light sources in the form of fire-based objects.
+
++ Includes both first-person and traditional "sky/god" views for
+convenience in evaluating the scene.
+
++ Collision detection with all solid objects in the scene.
+The user will not be able to "walk through" any objects, including the 
+outside walls.
